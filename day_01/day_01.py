@@ -6,12 +6,12 @@ from typing import Any
 
 from collections import defaultdict
 
-FLAGS = flags.FLAGS
+FLAGS: flags.FlagValues = flags.FLAGS
 
 flags.DEFINE_string("input", None, "Input File", short_name="i")
 
 
-def main(_: Any):
+def main(_: Any) -> None:
     list_one: list[int] = []
     list_two: list[int] = []
 
